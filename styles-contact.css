@@ -49,11 +49,11 @@ body {
 .center {
     /*width: 550px;
     this is for responsiveness! :) */
-    width: 37.85%;
+    width: 5%;
     min-width: 300px;
-    padding: 4% 8% 5% 8%;
+    padding: 2% 2% 2% 2%;
     /* tried to make it as centered as possible with badding and width */
-    margin: -46px auto;
+    margin: 5px auto;
     background: rgba(178, 21, 0, 0.65);
     /* background: rgba(63, 13, 13, 0.65); */
     /* this uses opacity of 65% for the background color */
@@ -186,7 +186,7 @@ p {
         flex-wrap: nowrap; /* Prevent wrapping on larger screens */
         padding: 0 3em;
         justify-content: flex-end; /* Ensure the whole navbar aligns to the right */
-        margin-top: -80.5px;
+        margin-top: -6.5px;
         margin-right: 4px;
     }
 
