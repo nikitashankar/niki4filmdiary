@@ -1,0 +1,209 @@
+@import url('https://fonts.cdnfonts.com/css/redaction');
+
+html,
+body,
+div,
+h1,
+h2,
+p,
+a,
+img,
+center,
+ul,
+li,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+/* heeyyy guys it's niki here B) */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("images/cassette-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.center {
+    /*width: 550px;
+    this is for responsiveness! :) */
+    width: 37.85%;
+    min-width: 300px;
+    padding: 4% 8% 5% 8%;
+    /* tried to make it as centered as possible with badding and width */
+    margin: -46px auto;
+    background: rgba(178, 21, 0, 0.65);
+    /* background: rgba(63, 13, 13, 0.65); */
+    /* this uses opacity of 65% for the background color */
+    text-align: center;
+    border-radius: 50px;
+    /* no border!!! instead i rounded the corners */
+    overflow: none; /* auto; */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+h1 {
+    font-family: 'Redaction 20', sans-serif;
+    font-weight: 400;
+    font-style: normal !important;
+    font-size: 4em;
+    margin: 0 auto 10px auto;
+    color: #fff;
+}
+
+h2 {
+    /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.3em;
+    line-height: 1.5em;
+    margin: 0px;
+    color: #fff;
+    text-wrap: wrap;
+}
+
+p {
+    /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+    font-family: "anaphora-stencil", sans-serif;
+    font-weight: 280;
+    font-style: normal;
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.4em;
+    text-wrap: wrap;
+    margin-top: 5px;
+}
+
+#star {
+    display: inline;
+    font-size: 0.75em;
+}
+
+.leftlogo {
+    justify-self: start;
+    padding-left: 25px;
+    padding-top: 35px;
+    width: 100px; /* Adjust size as needed */
+}
+
+#toplogo {
+    width: 80px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: flex-end; /* Align the entire navbar to the right */
+    padding: 0.5em; /* Adjust padding as needed */
+    position: relative;
+    margin-top: -1em; /* Move it higher if needed */
+}
+
+.topnav ul {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5em; /* Space between the items */
+    padding: 0;
+    margin-top: -75px;
+    list-style: none;
+    justify-content: end; /* Align grid to the right */
+    width: auto;
+}
+
+.topnav li {
+    display: flex;
+    justify-content: flex-end; /* Align text to the right within each column */
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-family: "anaphora-stencil", sans-serif;
+    font-weight: 280;
+    font-style: normal;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: right; /* Align text to the right */
+}
+
+/* desktop view!!! my fav */
+@media (min-width: 1100px) {
+    
+    .center {
+        /*width: 550px;
+        this is for responsiveness! :) */
+        width: 37.85%;
+        min-width: 300px;
+        padding: 4% 8% 5% 8%;
+        /* tried to make it as centered as possible with badding and width */
+        margin: 24px auto;
+        background: rgba(178, 21, 0, 0.65);
+        /* background: rgba(63, 13, 13, 0.65); */
+        /* this uses opacity of 65% for the background color */
+        text-align: center;
+        border-radius: 50px;
+        /* no border!!! instead i rounded the corners */
+        overflow: none; /* auto; */
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+    }
+
+    .leftlogo {
+        justify-self: start;
+        padding-left: 30px;
+        padding-top: 20px;
+        width: 100px; /* Adjust size as needed */
+    }
+    
+    #toplogo {
+        width: 100px;
+    }
+    .topnav {
+        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+        padding: 0 3em;
+        justify-content: flex-end; /* Ensure the whole navbar aligns to the right */
+        margin-top: -80.5px;
+        margin-right: 4px;
+    }
+
+    .topnav ul {
+        display: flex;
+        flex-wrap: nowrap; /* Keep all items in a single line */
+        justify-content: flex-end; /* Align all items to the right */
+        margin-left: auto; /* Pushes the ul to the right edge */
+        gap: 1em;
+    }
+
+    .topnav li {
+        width: auto; /* Removes the width restriction for desktop view */
+        flex: initial; /* Default sizing for flex items */
+    }
+
+    .topnav a:hover {
+        background-color: rgba(178, 21, 0, 0.65);
+    }
+}
