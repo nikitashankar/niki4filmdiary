@@ -68,7 +68,7 @@ body {
 h1 {
     font-family: 'Redaction 20', sans-serif;
     font-weight: 400;
-    font-style: normal !important;
+    font-style: normal;
     font-size: 4em;
     margin: 0 auto 10px auto;
     color: #fff;
@@ -160,7 +160,7 @@ p {
         min-width: 300px;
         padding: 4% 8% 5% 8%;
         /* tried to make it as centered as possible with badding and width */
-        margin: 24px auto;
+        margin: 22.5px auto;
         background: rgba(178, 21, 0, 0.65);
         /* background: rgba(63, 13, 13, 0.65); */
         /* this uses opacity of 65% for the background color */
@@ -170,6 +170,64 @@ p {
         overflow: none; /* auto; */
         scrollbar-width: none; 
         -ms-overflow-style: none; 
+    }
+
+    #logo {
+        margin-bottom: 5px;
+        text-align: center;
+        /* obviously had to add my little niki watermark as my logo ;) */
+    }
+    
+    
+    hr {
+        margin-bottom: 1em;
+    }
+    
+    h1 {
+            font-family: 'Redaction 20', sans-serif;
+            font-weight: 400;
+            font-style: normal !important;
+            font-size: 4em;
+            margin: 0 auto 10px auto;
+            color: #fff;
+    }
+    
+    h2 {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: 'Redaction 35', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2.3em;
+            line-height: 1.5em;
+        margin: 0px;
+        color: #fff;
+    }
+
+    p {
+        /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+        font-family: "anaphora-stencil", sans-serif;
+        font-weight: 280;
+        font-style: normal;
+        font-size: 1.1em;
+        color: #fff;
+        line-height: 1.4em;
+        text-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .metablock {
+        font-size: 1.25em;
+            line-height: 1.5em;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            gap: 0.35em;
+        margin-bottom: 0.5em;
+    }
+    
+    #desc {
+            line-height: 1.5em;
+            font-size: 0.95em;
     }
 
     .leftlogo {
@@ -186,24 +244,39 @@ p {
         flex-wrap: nowrap; /* Prevent wrapping on larger screens */
         padding: 0 3em;
         justify-content: flex-end; /* Ensure the whole navbar aligns to the right */
-        margin-top: -6.5px;
+        margin-top: -80.5px;
         margin-right: 4px;
     }
 
     .topnav ul {
         display: flex;
-        flex-wrap: nowrap; /* Keep all items in a single line */
-        justify-content: flex-end; /* Align all items to the right */
-        margin-left: auto; /* Pushes the ul to the right edge */
+        flex-wrap: nowrap; /* Keep items in a single line */
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
         gap: 1em;
+        list-style: none;
     }
-
+    
     .topnav li {
-        width: auto; /* Removes the width restriction for desktop view */
-        flex: initial; /* Default sizing for flex items */
+        display: flex;
+        align-items: center;
     }
-
+    
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        font-family: "anaphora-stencil", sans-serif;
+        font-weight: 280;
+        font-style: normal;
+        padding: 0.5em 1em;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        display: inline-block; /* Ensure proper sizing */
+    }
+    
     .topnav a:hover {
         background-color: rgba(178, 21, 0, 0.65);
+        /* Optional: add padding or border if needed */
     }
-}
+}    
