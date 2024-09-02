@@ -53,7 +53,7 @@ body {
     min-width: 300px;
     padding: 2% 2% 2% 2%;
     /* tried to make it as centered as possible with badding and width */
-    margin: 5px auto;
+    margin: 10px auto;
     background: rgba(178, 21, 0, 0.65);
     /* background: rgba(63, 13, 13, 0.65); */
     /* this uses opacity of 65% for the background color */
@@ -63,13 +63,26 @@ body {
     overflow: none; /* auto; */
     scrollbar-width: none; 
     -ms-overflow-style: none; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    max-height: 75vh; 
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+#logo {
+	margin-bottom: 5px;
+	text-align: center;
+	/* obviously had to add my little niki watermark as my logo ;) */
 }
 
 h1 {
     font-family: 'Redaction 20', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4em;
+    font-size: 3.5em;
     margin: 0 auto 10px auto;
     color: #fff;
 }
@@ -79,7 +92,7 @@ h2 {
     font-family: 'Redaction 35', sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 2.3em;
+    font-size: 2em;
     line-height: 1.5em;
     margin: 0px;
     color: #fff;
@@ -91,11 +104,21 @@ p {
     font-family: "anaphora-stencil", sans-serif;
     font-weight: 280;
     font-style: normal;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #fff;
     line-height: 1.4em;
     text-wrap: wrap;
     margin-top: 5px;
+}
+
+.metablock {
+	font-size: 1.25em;
+    line-height: 1.5em;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    gap: 0.35em;
+    margin-bottom: 0.5em;
 }
 
 #star {
@@ -160,7 +183,7 @@ p {
         min-width: 300px;
         padding: 4% 8% 5% 8%;
         /* tried to make it as centered as possible with badding and width */
-        margin: 22.5px auto;
+        margin: 30.5px auto;
         background: rgba(178, 21, 0, 0.65);
         /* background: rgba(63, 13, 13, 0.65); */
         /* this uses opacity of 65% for the background color */
