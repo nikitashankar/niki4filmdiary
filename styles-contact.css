@@ -68,7 +68,7 @@ body {
     max-height: 65vh; 
 }
 
-.scrollable::-webkit-scrollbar {
+.center::-webkit-scrollbar {
     display: none;
 }
 
